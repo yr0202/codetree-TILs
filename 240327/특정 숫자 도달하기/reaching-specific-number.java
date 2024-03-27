@@ -5,17 +5,23 @@ public class Main {
 
         int[] arr = new int[10];
         int sum=0;
+        int i =0;
+        double average;
 
-        for(int i=0; i<arr.length; i++){
+        for(i=0; i<arr.length; i++){
             arr[i]=sc.nextInt();
             sum = sum + arr[i];
             if(arr[i]>=250){
                 sum -= arr[i];
-                double average = (double)sum/i;
+                average = (double)sum/i;
                 System.out.printf("%d %.1f",sum, average);
                 break;
             }
+        }
 
+        if (i==10){
+            average = (double)sum/i;
+            System.out.printf("%d %.1f",sum, average);
         }
         
     }
