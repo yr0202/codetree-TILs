@@ -8,10 +8,12 @@ public class Main {
 
         for(int i=0;i<n;i++){
             grade[i]=sc.nextDouble();
-            sum =+ grade[i];
+            sum += grade[i];
         }
-        double average = string.format("%.1f",sum/n);
-        System.out.prinln(average);
+        double average = (sum/n)*10;
+        average = (int)average;
+        average = (double)average/10;
+        System.out.println(average);
 
         if(average>=4.0) System.out.println("Perfect");
         else if(average>=3.0) System.out.println("Good");
