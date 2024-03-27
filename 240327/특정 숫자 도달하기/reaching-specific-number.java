@@ -12,7 +12,7 @@ public class Main {
             if(arr[i]>=250){
                 sum -= arr[i];
                 double average = (double)sum/i;
-                System.out.println(sum+" "+ average);
+                System.out.printf("%d %.1f",sum, average);
                 break;
             }
 
