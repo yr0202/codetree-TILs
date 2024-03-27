@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,14 +11,12 @@ public class Main {
             grade[i]=sc.nextDouble();
             sum += grade[i];
         }
-        double average = (sum/n)*10;
-        average = (int)average;
-        average = (double)average/10;
-        System.out.println(average);
+        double average = (sum/n);
+
+        System.out.println(String.format("%.1f",average));
 
         if(average>=4.0) System.out.println("Perfect");
         else if(average>=3.0) System.out.println("Good");
         else System.out.println("Poor");
-        
     }
 }
