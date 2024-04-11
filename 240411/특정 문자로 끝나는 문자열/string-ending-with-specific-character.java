@@ -11,12 +11,13 @@ public class Main {
         char c = sc.next().charAt(0);
         for(int i=0;i<n;i++){
             int tmp = arr[i].length();
-            cnt++;
+            
             if(arr[i].charAt(tmp-1)==c){
+                cnt++;
                 System.out.println(arr[i]);
             }
         }
-        if(cnt ==0){
+        if(cnt == 0){
             System.out.println("None");
         }
     }
