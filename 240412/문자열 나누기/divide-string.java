@@ -6,7 +6,7 @@ public class Main {
         String[] arr = new String[n];
         String s = "";
         int cnt = 1;
-        int sum = 0;
+       
 
         for(int i=0; i<n; i++){
             arr[i]=sc.next();
@@ -23,11 +23,11 @@ public class Main {
                     System.out.println(s);
                     cnt = 1;
                     s = "";
-                    sum++;
+                    
                 }
                 
             }
         }
-        System.out.println(sum);
+        System.out.println(s);
     }
 }
